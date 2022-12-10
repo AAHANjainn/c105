@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Face Recognition</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <h1>Face Recognition App</h1>
+    <h3>Model is trained to identify the following objects</h3>
+    <br>
+    <label>Father</label>
+    <br>
+    <label>Mother</label>
+    <br>
+    <label>Sister</label>
+    <br>
+
+    <label>Brother</label>
+<br><br>
+<p>Webcam View </p>
+<div id="camera"></div>
+<br>
+<div id="output"></div>
+<br><br>
+<button class="btn btn-success" onclick="click_image()">Click</button>
+<button class="btn btn-success" onclick="classify_image()">Classify</button>
+<br>
+<h3 id="name"></h3>
+<h3 id="accuracy"></h3>
+<script src='main.js'></script>
+</body>
+</html>
